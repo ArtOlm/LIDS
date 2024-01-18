@@ -1,0 +1,390 @@
+/*
+# File: lids_dashboard.css
+#
+# Description: Styles for the LIDS-D Dashboard Web Application
+#
+# @Author:Arturo Olmos, Raul Tinajero Olivas
+# @ Modifier:
+*/
+/*
+@author:Arturo Olmos
+*/
+.xmlFileTextArea {
+    height: 100%;
+    border-radius: 3px;
+    width: 100%;
+    overflow: auto;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for dashboard body
+*/
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    margin: 0%;
+    vertical-align: top;
+    font-size: 0;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for header disconnect button
+*/
+.disconnectButton {
+    background: lightgray;
+    width: 100px;
+    height: 30px;
+    border: black;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 5%;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for header
+*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(173, 173, 173);
+    height: auto;
+    position: relative;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    General styling for forms
+*/
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for header connection button
+*/
+#ConnectButton {
+    background: lightgray;
+    width: 100px;
+    height: 30px;
+    border: black;
+    border-radius: 25px;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for header forms
+*/
+#IPAdressForm,
+#PortNumberForm {
+    padding: 8px;
+    border: 1px solid #AAA;
+    border-radius: 4px;
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for the left side bar containing buttons in dashboard
+*/
+.leftSidebar {
+    height: 100%;
+    width: 10%;
+    border: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for buttons in left sidebar
+*/
+.leftSidebarButton {
+    background: #909090;
+    border: none;
+    margin-top: 20%;
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for table data tags
+*/
+td {
+    max-width: 50px;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for mouse hovering
+*/
+#ConnectButton:hover, 
+.dashboardButtonAction:hover {
+    background: rgb(255, 255, 255);
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for images in left sidebar
+*/
+.leftSidebarImages {
+    margin-left: 30%;
+    height: 40%;
+    width: 40%;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling foundation for dashboard tables
+*/
+th,
+td {
+    border-collapse: collapse;
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for table header 
+*/
+th {
+    border: None;
+    background: rgb(173, 173, 173);
+}
+/* Setting colors for the varying levels */
+.level1{
+    background-color: greenyellow;
+}
+.level2{
+    background-color: yellow;
+}
+.level3{
+    background-color: red;
+}
+
+/*
+    @Author:Seth Velasco
+    Setting colors for the varying levels 
+*/
+.level1Default{
+    background-color: greenyellow;
+}
+.level2Default{
+    background-color: yellow;
+}
+.level3Default{
+    background-color: red;
+}
+/* The same colors but for the Protanopia Color blindess  */
+.level1Protanopia{
+    background-color: rgb(255, 231, 110);
+}
+.level2Protanopia{
+    background-color: rgb(255,247,216);
+}
+.level3Protanopia{
+    background-color: rgb(144,129,33);
+}
+/* The same colors, but for the Deuteranopia colorblindess*/
+.level1Deuteranopia{
+    background-color: rgb(255,226,189);
+}
+.level2Deuteranopia{
+    background-color: rgb(255,245,233);
+}
+.level3Deuteranopia{
+    background-color: rgb(162,122,0);
+}
+/* The same colors, but for the Tritanopia colorblindness */
+.level1Tritanopia{
+    background-color: rgb(200,237,255);
+}
+.level2Tritanopia{
+    background-color: rgb(255,244,249);
+}
+.level3Tritanopia{
+    background-color: rgb(253,24,0);
+}
+
+
+.table-container {
+    justify-content: space-between;
+    width: 70%;
+    max-height: 80vh;
+    margin: 1% 0% 1vh 0%;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.notifications,
+.errors {
+    display: inline-block;
+    height: 45.5vh;
+    width: 20vw;
+}
+
+table.alertbox {
+    width: 70%; /* adjusted width */
+    position: relative;
+    display: block;
+    overflow-x: visible;
+    margin: 1% 0% 1vh 5%; /* Adjust margin for positioning */
+}
+/*
+    @Author:Arturo Olmos
+    Styling for header so that it stays in a single position when scrolling
+*/
+thead {
+    position: sticky;
+    top: 0px;
+    margin-top: 0;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for sort button in Alert Box
+*/
+.sort-button {
+    position: absolute;
+    right: 0;
+    top: -1px;
+    z-index: 2;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Dropdown styling for Alert Box options
+*/
+.dropdown {
+    position: relative;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for dropdown options
+*/
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    min-width: 10px;
+    z-index: 1;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for button within dropdown
+*/
+.dropdown-options button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: none;
+    padding: 8px 12px;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for dropdown button hovering
+*/
+.dropdown-options button:hover {
+    background-color: #b9b9b9;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for header title (LIDS IP_ADDR)
+*/
+.headerTitle {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    text-align: right;
+}
+
+/*
+    @Author: Raul Tinajero Olivas
+    Styling for header connection image
+*/
+.connectedDisplay {
+    width: 40%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for right sidebar so that it takes up remaining space
+*/
+.rightSidebar {
+    height: 90%;
+    flex-grow: 1;
+    font-size: 15px;
+}
+
+/*
+    @Author:Arturo Olmos
+    @Modifier: Raul Tinajero Olivas
+    Styling for table containers in the right side bar
+*/
+div.rightSidebarSC {
+    width: 90%;
+    margin-left: 5%;
+    height: 37%;
+    margin-top: 10%;
+    overflow: auto;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for all tables
+*/
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+/*
+    @Author:Arturo Olmos
+    Styling for table container in the middle of dashboard
+*/
+div.tableContainer {
+    margin-top: 2.5%;
+    height: 80%;
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: auto;
+    font-size: 15px;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+}
+/*
+    @Author:Arturo Olmos
+    Styling for table buttons
+*/
+.alertDescriptionButton{
+    background-color: white;
+    border: None;
+    font-size: 17px;
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+}

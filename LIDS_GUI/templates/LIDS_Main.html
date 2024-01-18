@@ -1,0 +1,34 @@
+<!--
+# File: LIDS_Main.html
+#
+# Description: The file has a template that appears to be the main or welcome page of a Local Intrusion Detection System (LIDS). This page likely serves as an entry point to the system, where users can upload a configuration file. 
+# 
+# @ Author:Arturo Olmos, Raul Tinajero
+# Formatted the basic structure for the page but not the styling
+# @ Modified: 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIDS</title>
+    <link rel="stylesheet" href="../static/CSS/main.css">
+</head>
+<body>
+    <h2>Welcome to LIDS</h2>
+
+    <h3>Upload</h3>
+    <h3>Configuration File</h3>
+    <form id="fileUpload">
+        <label for="myFile">
+            Select a File
+            <input type="file" accept="text/xml" id="myFile" name="filename" style="display: none;">
+        </label>
+        
+    </form>
+    <script src="../static/js/LIDS_Main.js"></script>
+</body>
+</html>
